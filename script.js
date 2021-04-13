@@ -27,7 +27,7 @@ window.onload = () => {
 function staticLoadPlaces() {
     return [
         {
-            name: 'Pokèmon',
+            name: 'Magnemite',
             location: {
                 lat: 52.3398353,
                 lng: 4.9205359,
