@@ -10,10 +10,10 @@
     <!-- Bootstrap, CSS and fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="/ar-style.css">
+    <link rel="stylesheet" href="ar-style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!-- our custom script -->
-    <script src="/script.js" defer></script>
+    <script src="script.js" defer></script>
     <!--   AR scripts   -->
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
@@ -21,7 +21,7 @@
   </head>  
   <body>
     <div class="container-fluid d-flex justify-content-center" id="nav-bar">
-          <a class="nav-link"  href="https://the-spot-landing.glitch.me/"><img id="logo" src="https://cdn.glitch.com/4e7d2836-0289-426a-ae8b-fc7e048805b6%2Fspot-logo.svg?v=1617812622732"></a>
+          <a class="nav-link"  href="https://the-spot-landing.glitch.me/"><img id="logo" src="assets/spot-logo.svg"></a>
     </div>
 <a-scene
       vr-mode-ui="enabled: false"
@@ -30,13 +30,36 @@
     >
       <a-entity gltf-model="#test" scale="1 1 1" position="0 0 0" gps-entity-place="latitude: 52.345960; longitude: 4.915262;"></a-entity>
       <a-text
-        value="This will always face the user." 
+        value="Hello friends at HvA" 
         look-at="[gps-camera]"
         scale="75 75 75" 
         gps-entity-place="latitude: 52.345958; longitude: 4.915262;"  
+        gps-camera="maxDistance: 40;"
       ></a-text>
+      <a-text
+        value="Hello Nour S2" 
+        look-at="[gps-camera]"
+        scale="75 75 75" 
+        gps-entity-place="latitude: 52.345958; longitude: 4.915262;"  
+        gps-camera="maxDistance: 40;"
+      ></a-text>
+      <a-text
+        value="Hello Carlos S2" 
+        look-at="[gps-camera]"
+        scale="75 75 75" 
+        gps-entity-place="latitude: 52.3155203; longitude: 4.9462536;"  
+        gps-camera="maxDistance: 40;"
+      ></a-text>
+      <a-text
+        value="Hello Kays S2" 
+        look-at="[gps-camera]"
+        scale="75 75 75" 
+        gps-entity-place="latitude: 51.6386271; longitude: 6.7165032;"  
+        gps-camera="maxDistance: 40;"
+      ></a-text>
+
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
-    <button type="button" class="btn btn-primary" id="button-cta" onclick="#"><p>Get to know more </p><img id="icon-info" src="https://cdn.glitch.com/4e7d2836-0289-426a-ae8b-fc7e048805b6%2Farrow-right-square-white.svg?v=1617872854641"></button>  
+    <button type="button" class="btn btn-primary" id="button-cta" onclick="#"><p>Get to know more </p><img id="icon-info" src="assets/arrow-right-white.svg"></button>  
   </body>
 </html>
