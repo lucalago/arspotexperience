@@ -30,6 +30,7 @@
     >
     <a-assets>
       <img id="carlos-gif" src="assets/carlos.gif">
+      <img id="luca-gif" src="assets/luca.gif">
     </a-assets>
       <a-entity gltf-model="#test" scale="1 1 1" position="0 0 0" gps-entity-place="latitude: 52.345960; longitude: 4.915262;"></a-entity>
       <a-text
@@ -46,6 +47,12 @@
         gps-entity-place="latitude: 52.339877; longitude: 4.920613;"  
         gps-camera="maxDistance: 40;"
       ></a-text>
+      <a-image src="#luca-gif"
+      look-at="[gps-camera];"
+      width="1;" 
+      gps-entity-place="latitude: 52.339877; longitude: 4.920613;"  
+      gps-camera="maxDistance: 40;"
+    ></a-image>
       <a-image src="#carlos-gif"
         look-at="[gps-camera];"
         width="1;" 
