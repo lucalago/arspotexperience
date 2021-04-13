@@ -155,7 +155,7 @@ body {
   color: white;
   z-index: 999999;
 }
-button {
+button#info-btn {
   display: flex;
   align-items: center;
   justify-content: center;
