@@ -28,6 +28,9 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
+    <a-assets>
+      <img id="carlos-gif" src="assets/carlos.gif">
+    </a-assets>
       <a-entity gltf-model="#test" scale="1 1 1" position="0 0 0" gps-entity-place="latitude: 52.345960; longitude: 4.915262;"></a-entity>
       <a-text
         value="Hello friends at HvA" 
@@ -43,13 +46,12 @@
         gps-entity-place="latitude: 52.339877; longitude: 4.920613;"  
         gps-camera="maxDistance: 40;"
       ></a-text>
-      <a-text
-        value="Hello Carlos S2" 
-        look-at="[gps-camera]"
-        scale="75 75 75" 
+      <a-image src="#carlos-gif"
+        look-at="[gps-camera];"
+        width="1;" 
         gps-entity-place="latitude: 52.3155203; longitude: 4.9462536;"  
         gps-camera="maxDistance: 40;"
-      ></a-text>
+      ></a-image>
       <a-text
         value="Hello Kays S2" 
         look-at="[gps-camera]"
