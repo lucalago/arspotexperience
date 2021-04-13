@@ -4,6 +4,7 @@ body {
     padding: 0;
     max-width: 100vw !important;
     max-height: 100vh !important;
+    overflow: hidden;
   }
   body, #nav-bar, #button-cta, #arjs-video {
     touch-action: none !important;

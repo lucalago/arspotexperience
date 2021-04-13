@@ -18,6 +18,12 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+    <script>
+        THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
+    </script>
   </head>  
   <body>
     <div class="container-fluid d-flex justify-content-center" id="nav-bar">
@@ -32,41 +38,7 @@
       <img id="carlos-gif" src="assets/carlos.gif">
       <img id="luca-gif" src="assets/luca.gif">
     </a-assets>
-      <a-entity gltf-model="#test" scale="1 1 1" position="0 0 0" gps-entity-place="latitude: 52.345960; longitude: 4.915262;"></a-entity>
-      <a-text
-        value="Hello friends at HvA" 
-        look-at="[gps-camera]"
-        scale="75 75 75" 
-        gps-entity-place="latitude: 52.345958; longitude: 4.915262;"  
-        gps-camera="maxDistance: 40;"
-      ></a-text>
-      <a-text
-        value="Hello Luca S2" 
-        look-at="[gps-camera]"
-        scale="75 75 75" 
-        gps-entity-place="latitude: 52.339877; longitude: 4.920613;"  
-        gps-camera="maxDistance: 40;"
-      ></a-text>
-      <a-image src="#luca-gif"
-      look-at="[gps-camera];"
-      width="1;" 
-      gps-entity-place="latitude: 52.339877; longitude: 4.920613;"  
-      gps-camera="maxDistance: 40;"
-    ></a-image>
-      <a-image src="#carlos-gif"
-        look-at="[gps-camera];"
-        width="1;" 
-        gps-entity-place="latitude: 52.3155203; longitude: 4.9462536;"  
-        gps-camera="maxDistance: 40;"
-      ></a-image>
-      <a-text
-        value="Hello Kays S2" 
-        look-at="[gps-camera]"
-        scale="75 75 75" 
-        gps-entity-place="latitude: 51.6386271; longitude: 6.7165032;"  
-        gps-camera="maxDistance: 40;"
-      ></a-text>
-
+      
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
     <button type="button" class="btn btn-primary" id="button-cta" onclick="#"><p>Get to know more </p><img id="icon-info" src="assets/arrow-right-white.svg"></button>  
