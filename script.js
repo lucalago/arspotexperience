@@ -38,19 +38,19 @@ function staticLoadPlaces() {
 
 var models = [
     {
-        url: 'https://github.com/nicolocarpignoli/location-based-ar-tutorial/tree/master/static-places/assets/magnemite/scene.gltf',
+        url: 'assets/magnemite/scene.gltf',
         scale: '0.5 0.5 0.5',
         info: 'Magnemite, Lv. 5, HP 10/10',
         rotation: '0 180 0',
     },
     {
-        url: 'https://github.com/nicolocarpignoli/location-based-ar-tutorial/tree/master/static-places/assets/articuno/scene.gltf',
+        url: 'assets/articuno/scene.gltf',
         scale: '0.2 0.2 0.2',
         rotation: '0 180 0',
         info: 'Articuno, Lv. 80, HP 100/100',
     },
     {
-        url: 'https://github.com/nicolocarpignoli/location-based-ar-tutorial/tree/master/static-places/assets/dragonite/scene.gltf',
+        url: 'assets/dragonite/scene.gltf',
         scale: '0.08 0.08 0.08',
         rotation: '0 180 0',
         info: 'Dragonite, Lv. 99, HP 150/150',
