@@ -1,20 +1,20 @@
-document.addEventListener('gesturestart', function(e) {
-    e.preventDefault();
-    // special hack to prevent zoom-to-tabs gesture in safari
-    document.body.style.zoom = 0.99;
-});
+// document.addEventListener('gesturestart', function(e) {
+//     e.preventDefault();
+//     // special hack to prevent zoom-to-tabs gesture in safari
+//     document.body.style.zoom = 0.99;
+// });
 
-document.addEventListener('gesturechange', function(e) {
-    e.preventDefault();
-    // special hack to prevent zoom-to-tabs gesture in safari
-    document.body.style.zoom = 0.99;
-});
+// document.addEventListener('gesturechange', function(e) {
+//     e.preventDefault();
+//     // special hack to prevent zoom-to-tabs gesture in safari
+//     document.body.style.zoom = 0.99;
+// });
 
-document.addEventListener('gestureend', function(e) {
-    e.preventDefault();
-    // special hack to prevent zoom-to-tabs gesture in safari
-    document.body.style.zoom = 0.99;
-});
+// document.addEventListener('gestureend', function(e) {
+//     e.preventDefault();
+//     // special hack to prevent zoom-to-tabs gesture in safari
+//     document.body.style.zoom = 0.99;
+// });
 
 window.onload = () => {
     const button = document.querySelector('button[data-action="change"]');
@@ -38,19 +38,19 @@ function staticLoadPlaces() {
 
 var models = [
     {
-        url: 'assets/magnemite/scene.gltf',
+        url: './assets/magnemite/scene.gltf',
         scale: '0.8 0.8 0.8',
         info: 'Magnemite, Lv. 5, HP 10/10',
         rotation: '0 180 0',
     },
     {
-        url: 'assets/articuno/scene.gltf',
+        url: './assets/articuno/scene.gltf',
         scale: '0.4 0.4 0.4',
         rotation: '0 180 0',
         info: 'Articuno, Lv. 80, HP 100/100',
     },
     {
-        url: 'assets/dragonite/scene.gltf',
+        url: './assets/dragonite/scene.gltf',
         scale: '0.3 0.3 0.3',
         rotation: '0 180 0',
         info: 'Dragonite, Lv. 99, HP 150/150',
@@ -93,9 +93,9 @@ function renderPlaces(places) {
 
         document.querySelector('button[data-action="change"]').addEventListener('click', function () {
             var entity = document.querySelector('[gps-entity-place]');
-            modelIndex++;
-            var newIndex = modelIndex % models.length;
-            setModel(models[newIndex], entity);
+            // modelIndex++;
+            // var newIndex = modelIndex % models.length;
+            // setModel(models[newIndex], entity);
         });
 
         scene.appendChild(model);
