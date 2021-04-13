@@ -136,7 +136,7 @@ body {
     margin-left: 10px;
   }
   */
-  .centered {
+.centered {
     height: 20%;
     justify-content: center;
     position: fixed;
@@ -148,7 +148,14 @@ body {
     left: 0;
     right: 0;
 }
-button:nth-child(2) {
+.instructions {
+  position: fixed;
+  top: 5%;
+  font-size: 1.25em;
+  color: white;
+  z-index: 999999;
+}
+button {
   display: flex;
   align-items: center;
   justify-content: center;
