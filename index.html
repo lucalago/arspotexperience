@@ -20,9 +20,9 @@
     <script>
         THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
     </script>
+<!-- our custom script -->
+    <script src="script.js"></script>
   </head>  
-      <!-- our custom script -->
-      <script src="script.js"></script>
 
   <body>
     <div class="container-fluid d-flex justify-content-center" id="nav-bar">
@@ -36,7 +36,7 @@
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
     <div class="centered">
-      <button data-action="change"></button>
+      <button id="info-btn" data-action="change"></button>
     </div>
     <button type="button" class="btn btn-primary" id="button-cta" onclick="#">
       <p>Get to know more </p>
