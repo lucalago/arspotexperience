@@ -1,3 +1,8 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
 #nav-bar {
     position: fixed !important;
      max-width: 100vw !important;
