@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>SPOT AR</title>
+    <title>MARKER - SPOT AR</title>
     
     <!-- Bootstrap, CSS and fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,8 +20,8 @@
         THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
     </script>
 <!-- our custom script -->
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="ar-style.css">
+    <script src="markerscript.js"></script>
+    <link rel="stylesheet" href="markerstyle.css">
   </head>  
 
   <body style='margin: 0; overflow: hidden;'>
@@ -38,9 +38,7 @@
     <div class="centered">
         <button data-action="change"></button>
     </div>
-    <button type="button" class="btn btn-primary" id="button-cta">
-      <a href="https://lucalago.github.io/arspotexperience/moreinfo.html"><p>Get to know more </p>
+      <a href="https://lucalago.github.io/arspotexperience/gps-spot.html" class="btn btn-primary" id="button-cta"><p>Try the GPS AR version </p>
       <img id="icon-info" src="assets/arrow-right-white.svg"></a>
-    </button>  
   </body>
 </html>

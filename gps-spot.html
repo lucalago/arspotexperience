@@ -4,15 +4,15 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>GeoAR.js demo</title>
+    <title>GPS - SPOT AR</title>
     <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
     <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     <script>
         THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
     </script>
-    <script src="./testscript.js"></script>
-    <link rel="stylesheet" type="text/css" href="./teststyle.css"/>
+    <script src="./gpsscript.js"></script>
+    <link rel="stylesheet" type="text/css" href="./gpsstyle.css"/>
 </head>
 
 <body style='margin: 0; overflow: hidden;'>
@@ -26,4 +26,6 @@
 <div class="centered">
     <button data-action="change"></button>
 </div>
+    <a href="https://lucalago.github.io/arspotexperience/index.html" class="btn btn-primary" id="button-cta"><p>Try the Marker AR version </p>
+        <img id="icon-info" src="assets/arrow-right-white.svg"></a>
 </body>
