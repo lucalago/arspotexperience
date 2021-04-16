@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>GPS - SPOT AR</title>
 
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>GPS - SPOT AR</title>
-    <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
-    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
-    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    <script>
-        THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
-    </script>
-    <script src="./gpsscript.js"></script>
-    <link rel="stylesheet" href="./mainstyle.css">
-    <link rel="stylesheet" type="text/css" href="./gpsstyle.css"/>
-</head>
+        <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
+        <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+        <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+        <script>
+            THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
+        </script>
 
-<body style='margin: 0; overflow: hidden;'>
-    <div class="centered instructions"></div>
-    <a-scene 
-        vr-mode-ui='enabled: false' 
-        embedded
-        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-    <a-camera gps-camera rotation-reader></a-camera>
-</a-scene>
-<div class="centered">
-    <button data-action="change"></button>
-</div>
-    <a href="https://lucalago.github.io/arspotexperience/index.html" class="btn btn-primary" id="button-cta"><p>Try the Marker AR version </p>
-        <img id="icon-info" src="./assets/arrow-right-white.svg"></a>
-</body>
+        <script src="./gpsscript.js"></script>
+        
+        <link rel="stylesheet" href="./mainstyle.css">
+        <link rel="stylesheet" type="text/css" href="./gpsstyle.css"/>
+    </head>
+
+    <body style='margin: 0; overflow: hidden;'>
+        <div class="centered instructions"></div>
+        <a-scene 
+            vr-mode-ui='enabled: false' 
+            embedded
+            arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        <a-camera gps-camera rotation-reader></a-camera>
+    </a-scene>
+    <div class="centered">
+        <button data-action="change"></button>
+    </div>
+        <a href="https://lucalago.github.io/arspotexperience/index.html" class="btn btn-primary" id="button-cta"><p>Try the Marker AR version </p>
+            <img id="icon-info" src="./assets/arrow-right-white.svg">
+        </a>
+    </body>
+</html>
