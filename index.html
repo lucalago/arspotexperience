@@ -13,13 +13,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!--   AR scripts   -->
-    <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
-    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
-    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    <script>
-        THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+    <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     </script>
-<!-- our custom script -->
+
+    <!-- Our custom script -->
     <script src="./markerscript.js"></script>
     <link rel="stylesheet" href="./mainstyle.css">
     <link rel="stylesheet" href="./markerstyle.css">
@@ -29,16 +28,25 @@
     <div class="container-fluid d-flex justify-content-center" id="nav-bar">
           <a class="nav-link"  href="https://lucalago.github.io/arspotexperience"><img id="logo" src="./assets/spot-logo.svg"></a>
     </div>
-    <div class="centered instructions"></div>
-    <a-scene 
-        vr-mode-ui='enabled: false' 
-        embedded
-        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-      <a-camera gps-camera rotation-reader></a-camera>
+    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+
+      <a-assets>
+          <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
+      </a-assets>
+
+      <a-marker type='pattern' preset='custom' url="https://lucalago.github.io/arspotexperience/assets/pattern-spot-marker-black-03.patt">
+          <a-box position='0 0.5 0' color="yellow"></a-box>
+      </a-marker>
+
+      <a-marker type='pattern' preset='custom' url="https://lucalago.github.io/arspotexperience/assets/pattern-spot-marker-black-03.patt">
+          <a-entity
+              gltf-model="#animated-asset"
+              scale="2">
+          </a-entity>
+      </a-marker>
+        <a-entity camera></a-entity>
     </a-scene>
-    <div class="centered">
-        <button data-action="change"></button>
-    </div>
+
       <a href="https://lucalago.github.io/arspotexperience/gps-spot.html" class="btn btn-primary" id="button-cta"><p>Try the GPS AR version </p>
       <img id="icon-info" src="./assets/arrow-right-white.svg"></a>
   </body>
